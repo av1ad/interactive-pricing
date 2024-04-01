@@ -18,6 +18,7 @@
 
 body {
     font-family: 'Manrope', sans-serif; /* 600, 800 */
+    background-color: var(--very-pale-blue);
     background-image: url(./images/bg-pattern.svg);
     background-repeat: no-repeat;
     margin: 0 1.5em;
@@ -27,15 +28,115 @@ p {
     font-size: 15px;
 }
 
+header {
+    background-image: url(./images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 2em 0;
+    margin: 1em;
+}
+
+.title {
+    font-size: 1.10em;
+    font-weight: 800;
+    color: var(--dark-desaturated-blue);
+}
+
+.description {
+    font-size: .90em;
+    color: var(--grayish-blue);
+    margin: .35em;
+
+}
+
 .main {
     background-color: var(--white);
     padding: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: .5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 li {
     list-style: url(./images/icon-check.svg);
 }
 
+
+/* Billing Toggle Switch */
+
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light-grayish-blue);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: var(--pale-blue);
+    background-color: var(--dark-desaturated-blue);
+    padding: .75em 3.5em;
+    border-radius: 3em;
+  }
