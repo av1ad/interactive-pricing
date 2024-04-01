@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 :root {
-  --strong-cyan: hsl(174, 86%, 45%); /* (Slider Backround) */
-  --light-grayish-red: hsl(14, 92%, 95%); /* (Discount Background) */
-  --light-red: hsl(15, 100%, 70%); /* (Discount Text) */
-  --soft-cyan: hsl(174, 77%, 80%); /* (Full Slider Bar) */
-  --pale-blue: hsl(226, 100%, 87%); /* (CTA Text) */
-  --white: hsl(0, 0%, 100%); /*  (Pricing Component Background) */
-  --very-pale-blue: hsl(230, 100%, 99%); /* (Main Background)*/
-  --light-grayish-blue: hsl(224, 65%, 95%); /*  (Empty Slider Bar) */
-  --light-grayish-blue: hsl(223, 50%, 87%); /*  (Toggle Background) */
-  --grayish-blue: hsl(225, 20%, 60%); /*  (Text) */
-  --dark-desaturated-blue: hsl(227, 35%, 25%); /*  (Text & CTA Background) */
+  --strong-cyan: hsl(174, 86%, 45%);
+  --light-grayish-red: hsl(14, 92%, 95%);
+  --light-red: hsl(15, 100%, 70%);
+  --soft-cyan: hsl(174, 77%, 80%);
+  --pale-blue: hsl(226, 100%, 87%);
+  --white: hsl(0, 0%, 100%);
+  --very-pale-blue: hsl(230, 100%, 99%);
+  --light-grayish-blue: hsl(224, 65%, 95%);
+  --light-grayish-blue: hsl(223, 50%, 87%);
+  --grayish-blue: hsl(225, 20%, 60%);
+  --dark-desaturated-blue: hsl(227, 35%, 25%);
 }
 
 body {
-  font-family: "Manrope", sans-serif; /* 600, 800 */
+  font-family: "Manrope", sans-serif;
   background-color: var(--very-pale-blue);
   background-image: url(./images/bg-pattern.svg);
   background-repeat: no-repeat;
-  margin: 0 1.5em;
+  margin: 1.5em;
   font-weight: 600;
 }
 
@@ -48,8 +48,6 @@ header {
   margin: 0.35em;
 }
 
-/* Main Content */
-
 .main {
   background-color: var(--white);
   padding: 3em;
@@ -64,7 +62,7 @@ header {
   letter-spacing: 2px;
   color: var(--grayish-blue);
   font-weight: 600;
-  font-size: .90em;
+  font-size: 0.9em;
 }
 
 .pricing {
@@ -77,14 +75,11 @@ header {
   font-weight: 800;
 }
 
-
 hr {
   width: 100%;
   margin: 1em 0;
   border: 0.5px solid var(--light-grayish-blue);
 }
-
-/* Features */
 
 ul {
   display: flex;
@@ -95,10 +90,10 @@ ul {
 
 li {
   list-style: url(./images/icon-check.svg);
-  padding-left: .75em;
+  padding-left: 0.75em;
   margin: 0 0 1em 0;
   color: var(--grayish-blue);
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 a {
@@ -106,23 +101,17 @@ a {
   color: var(--pale-blue);
   background-color: var(--dark-desaturated-blue);
   padding: 0.75em 3.5em;
-  border-radius: 3em;;
+  border-radius: 3em;
 }
-
-/* Billing  */
 
 .billing {
   color: var(--grayish-blue);
-  font-size: 0.825em;
+  font-size: 0.75em;
 }
 
 .toggler {
   display: flex;
   align-items: center;
-}
-
-.toggler p {
-  margin: 0 0.75em;
 }
 
 .toggler p span {
@@ -138,6 +127,7 @@ a {
   display: inline-block;
   width: 48px;
   height: 22px;
+  margin: .5em;
 }
 
 .switch input {
@@ -154,7 +144,6 @@ a {
   right: 0;
   bottom: 0;
   background-color: var(--light-grayish-blue);
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -166,25 +155,21 @@ a {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: var(--strong-cyan);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px var(--strong-cyan);
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
@@ -193,24 +178,18 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
 .start-btn:hover {
   background-color: var(--soft-cyan);
 }
 
-/* Slider */
-
 input[type="range"] {
-  --c: var(--strong-cyan); /* active color */
-  --g: #ababab; /* inactive color */
-  --l: 5px; /* line thickness*/
-  --s: 40px; /* thumb size */
-  --p: 0; /* default progress value */
-  
+  --c: var(--strong-cyan);
+  --g: #ababab;
+  --l: 5px;
+  --s: 40px;
+  --p: 0;
   width: 100%;
   height: var(--s);
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   background: none;
   cursor: pointer;
@@ -262,4 +241,3 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]::-moz-range-thumb:hover {
   box-shadow: 0 20px 40px rgba(0, 255, 231, 0.9);
 }
-

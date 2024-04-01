@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Aviad Churaman | Interactive pricing component</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <header>
-    <h1 class="title">Simple, traffic-based pricing</h1>
-    <p class="description">Sign-up for our 30-day trial.</p>
-    <p class="description"> No credit card required. </p>
-  </header>  
+    <title>Aviad Churaman | Interactive pricing component</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Simple, traffic-based pricing</h1>
+      <p class="description">Sign-up for our 30-day trial.</p>
+      <p class="description">No credit card required.</p>
+    </header>
 
-  <div class="main">
-    <p class="pageviews">100k Pageviews</p>
-    <input type="range" id="slider" min="0" max="100" step="25" value="50">
+    <div class="main">
+      <p class="pageviews">100k Pageviews</p>
+      <input type="range" id="slider" min="0" max="100" step="25" value="50" />
 
-    <p class="pricing"><span class="price">$16.00</span> / month</p>
+      <p class="pricing"><span class="price">$16.00</span> / month</p>
 
-    <div class="toggler">
-      <p class="billing">Monthly Billing</p>
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-      <p class="billing">Yearly Billing <span class="discount">-25%</span></p>
+      <div class="toggler">
+        <p class="billing">Monthly Billing</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <p class="billing">Yearly Billing <span class="discount">-25%</span></p>
+      </div>
+
+      <hr />
+
+      <div class="features">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+      </div>
+
+      <a href="#" class="start-btn">Start my trial</a>
     </div>
-
-    <hr>
-
-    <div class="features">
-      <ul>
-        <li>Unlimited websites</li>
-        <li>100% data ownership</li>
-        <li>Email reports</li>
-      </ul>
-    </div>
-  
-    <a href="#" class="start-btn">Start my trial</a>
-
-  </div>
-  
-</body>
-<script src="./index.js"></script>
+  </body>
+  <script src="./index.js"></script>
 </html>
