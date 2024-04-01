@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -18,7 +18,7 @@
 
   <div class="main">
     <p class="pageviews">100k Pageviews</p>
-    <p id="slider"></p>
+    <input type="range" id="slider" min="0" max="100" step="25" value="50">
 
     <p class="pricing"><span class="price">$16.00</span> /month</p>
 
@@ -28,9 +28,11 @@
         <input type="checkbox">
         <span class="slider round"></span>
       </label>
-      <p class="billing">Yearly Billing <span class="discount">25% discount</span></p>
+      <p class="billing">Yearly Billing <span class="discount">-25%</span></p>
     </div>
-  
+
+    <hr>
+
     <div class="features">
       <ul>
         <li>Unlimited websites</li>

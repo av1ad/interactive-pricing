@@ -22,11 +22,13 @@ body {
     background-image: url(./images/bg-pattern.svg);
     background-repeat: no-repeat;
     margin: 0 1.5em;
+    font-weight: 600;
 }
 
 p {
     font-size: 15px;
 }
+
 
 header {
     background-image: url(./images/pattern-circles.svg);
@@ -50,6 +52,8 @@ header {
 
 }
 
+/* Main Content */
+
 .main {
     background-color: var(--white);
     padding: 2em;
@@ -60,23 +64,55 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.pageviews {
+    letter-spacing: 2px;
+    color: var(--grayish-blue);
+    font-weight: 600;
+}
+
 li {
     list-style: url(./images/icon-check.svg);
 }
 
+hr {
+    width: 100%;
+    margin: 1em 0;
+    border: .5px solid var(--light-grayish-blue);
+}
 
-/* Billing Toggle Switch */
+
+/* Features */
+
+
+/* Billing  */
+
+.billing {
+    color: var(--grayish-blue);
+    font-size: .825em;
+}
 
 .toggler {
     display: flex;
     align-items: center;
 }
 
+.toggler p {
+    margin: 0 .75em;
+}
+
+.toggler p span {
+    font-size: .75em;
+    color: var(--light-red);
+    background-color: hsla(15, 100%, 70%, 15%);
+    padding: .25em .5em;
+    border-radius: 15px;
+}
+
 .switch {
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 24px;
+    width: 48px;
+    height: 22px;
   }
   
   .switch input { 
@@ -100,8 +136,8 @@ li {
   .slider:before {
     position: absolute;
     content: "";
-    height: 16px;
-    width: 16px;
+    height: 14px;
+    width: 14px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -140,3 +176,9 @@ li {
     padding: .75em 3.5em;
     border-radius: 3em;
   }
+
+
+  .start-btn:hover {
+    background-color: var(--soft-cyan);
+  }
+  
