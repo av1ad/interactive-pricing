@@ -48,3 +48,16 @@ function getPrice(pageviews, isYearlyBilling) {
   }
   return isYearlyBilling ? price * 0.75 : price;
 }
+
+
+const s = document.querySelector('input[type="range"]');
+
+function updateSliderProgress() {
+  const progress = (s.value - s.min) / (s.max - s.min) * 100;
+  s.style.setProperty('--p', progress);
+}
+
+s.addEventListener('input', updateSliderProgress);
+
+// Set initial progress value
+updateSliderProgress();
