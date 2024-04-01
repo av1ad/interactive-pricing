@@ -11,27 +11,26 @@
 <body>
 
   <header>
-    <h1>Simple, traffic-based pricing</h1>
-    <p>Sign-up for our 30-day trial. No credit card required. </p>
+    <h1 class="title">Simple, traffic-based pricing</h1>
+    <p class="description">Sign-up for our 30-day trial. No credit card required. </p>
   </header>  
 
   <div class="main">
-    <p>100k Pageviews</p>
+    <p class="pageviews">100k Pageviews</p>
     <p id="slider"></p>
 
-    <p><span>$16.00</span> /month</p>
+    <p class="pricing"><span class="price">$16.00</span> /month</p>
 
-    <div>
-      <span>Monthly Billing</span>
+    <div class="toggler">
+      <p class="billing">Monthly Billing</p>
       <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
       </label>
-      <p>Yearly Billing <span>25% discount</span></p>
+      <p class="billing">Yearly Billing <span class="discount">25% discount</span></p>
     </div>
   
-  
-    <div>
+    <div class="features">
       <ul>
         <li>Unlimited websites</li>
         <li>100% data ownership</li>
@@ -39,9 +38,10 @@
       </ul>
     </div>
   
-    <a href="#">Start my trial</a>
+    <a href="#" class="start-btn">Start my trial</a>
 
   </div>
   
 </body>
+<script src="./index.js"></script>
 </html>
