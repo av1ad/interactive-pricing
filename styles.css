@@ -179,7 +179,7 @@ input:checked + .slider:before {
 }
 
 .start-btn:hover {
-  background-color: var(--soft-cyan);
+  color: var(--very-pale-blue);
 }
 
 input[type="range"] {
