@@ -34,4 +34,5 @@ Users should be able to:
 - CSS
 - Flexbox
 - Mobile-first workflow
+- Bootstrap
 - JavaScript
